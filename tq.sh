@@ -1,14 +1,13 @@
 #!/bin/bash
 
 #获取服务器参数
+apt update -y
+apt install neofetch -y
 neofetch
-lscpu
-free -h
-df -h
 
 # 获取天气图片
-curl zh.wttr.in/Chengdu_1MQn.png -o tq.png
-ls -l tq.png
+curl zh.wttr.in/Chengdu_1MQn.png -o tq.png  
+ls -lh tq.png
 #base64编码
 export basetq=base64 -w 0 tq.png
 echo${basetq}
