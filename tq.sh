@@ -1,7 +1,14 @@
 #!/bin/bash
 
+#获取服务器参数
+neofetch
+lscpu
+free -h
+df -h
+
 # 获取天气图片
-curl zh.wttr.in/Chengdu_1MQn.png -o tq.png 
+curl zh.wttr.in/Chengdu_1MQn.png -o tq.png
+ll tq.png
 #base64编码
 basetq=base64 -w 0 tq.png
 echo${basetq}
