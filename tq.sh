@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 获取天气图片
-#curl zh.wttr.in/Chengdu_1MQn.png -o tq.png
+#curl zh.wttr.in/Chengdu_1MQn.png -o tq.png 
 #生成待发送md文档
 echo "\![tiqnq][tq] \n[tq]:data:image/png;base64,`base64 -w 0 tq.png`" > t01
 #server酱推送到微信
