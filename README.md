@@ -1,5 +1,7 @@
 # 定时推送天气预报
 
+Why temperature is F
+
 [阮一峰 GitHubAction 教程](http://www.ruanyifeng.com/blog/2019/12/github_actions.html)  
 
 [Server酱 推送服务](http://sc.ftqq.com/)  
