@@ -32,6 +32,12 @@ jobs:
       # Runs a single command using the runners shell
       #- name: get weather
         #run: curl zh.wttr.in/Chengdu_1MQn.png -o tq.png
+      - name: 设置时区
+        run: |
+          sudo rm /etc/localtime
+          sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+          hwclock
+          date
         
       - name: push weather
         run: bash ./tq.sh
