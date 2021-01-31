@@ -7,7 +7,7 @@
 
 # 获取天气图片
 curl zh.wttr.in/Chengdu
-curl zh.wttr.in/Chengdu_1Qn.png -o tq.png
+curl zh.wttr.in/Chengdu_1mQn.png -o tq.png
 #echo "图片大小"
 #ls -lh tq.png
 
