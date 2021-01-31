@@ -6,14 +6,14 @@
 #neofetch
 
 #切换时区
-sudo rm /etc/localtime
-sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+#sudo rm /etc/localtime
+#sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 TZ='Asia/Shanghai'; export TZ
 date
 
 # 获取天气图片
-curl zh.wttr.in/Chengdu
+curl zh.wttr.in/Chengdu > /dev/null
 curl zh.wttr.in/Chengdu_1mQn.png -o tq.png
 #echo "图片大小"
 #ls -lh tq.png
