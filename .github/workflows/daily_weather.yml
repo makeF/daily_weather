@@ -34,9 +34,9 @@ jobs:
         #run: curl zh.wttr.in/Chengdu_1MQn.png -o tq.png
       - name: 设置时区
         run: |
-          sudo rm /etc/localtime
-          sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-          hwclock
+          TZ='Asia/Shanghai'
+          export TZ
+          sudo hwclock
           date
         
       - name: push weather
