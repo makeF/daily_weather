@@ -7,6 +7,9 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
+  watch:
+  pull_request:
+    types: [started]
   schedule:
     - cron: '59 23 * * *'
   #pull_request:
