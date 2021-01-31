@@ -9,6 +9,9 @@
 sudo rm /etc/localtime
 sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
+TZ='Asia/Shanghai'; export TZ
+date
+
 # 获取天气图片
 curl zh.wttr.in/Chengdu
 curl zh.wttr.in/Chengdu_1mQn.png -o tq.png
