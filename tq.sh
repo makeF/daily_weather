@@ -5,6 +5,10 @@
 #sudo apt install neofetch -y
 #neofetch
 
+#切换时区
+sudo rm /etc/localtime
+sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
 # 获取天气图片
 curl zh.wttr.in/Chengdu
 curl zh.wttr.in/Chengdu_1mQn.png -o tq.png
