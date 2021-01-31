@@ -6,8 +6,8 @@
 #neofetch
 
 # 获取天气图片
-curl zh.wttr.in/Chengdu?1QnM
-curl zh.wttr.in/Chengdu_1QnM.png -o tq.png
+curl zh.wttr.in/Chengdu
+curl zh.wttr.in/Chengdu_1QunM.png -o tq.png
 #echo "图片大小"
 #ls -lh tq.png
 
